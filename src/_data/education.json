@@ -1,0 +1,48 @@
+[
+  {
+    "date": "2022 – Present (7th Semester)",
+    "role": "Bachelor of Technology (BTech) in Artificial Intelligence",
+    "company": "Kathmandu University (KU)",
+    "companyUrl": "https://ku.edu.np",
+    "companyBadge": "Leading AI Program in Nepal",
+    "location": "Dhulikhel, Kavre, Nepal",
+    "points": [
+      "<strong>Specialization:</strong> Natural Language Processing (NLP), Computational Linguistics, Low-Resource Language Architectures, and Agentic Workflows.",
+      "<strong>Lab Leadership:</strong> Volunteer Secretary at <em>AISSR LAB KU</em>; active researcher in low-resource data pipelines and Devanagari morphological engines.",
+      "<strong>Agricultural AI:</strong> Developing inclusive edge AI pipelines, sensor networks, and data architectures for researchers and farmers."
+    ],
+    "skills": [
+      "PyTorch",
+      "Transformers",
+      "Morphology",
+      "Agentic Systems",
+      "Edge IoT"
+    ]
+  },
+  {
+    "date": "2017 – 2021 (Discontinued)",
+    "role": "Bachelor of Engineering (BE) in Electronics & Communications Engineering",
+    "company": "Kantipur Engineering College (Affiliated with Tribhuvan University)",
+    "companyUrl": "https://kec.edu.np",
+    "location": "Dhapakhel, Lalitpur, Nepal",
+    "description": "Focused on digital signal processing, microcontrollers, telecommunications, and robotics. Successfully completed Bachelor’s thesis on an “Automatic Hotel Waiter Robot” inspired by Paaila Technology.",
+    "skills": [
+      "Embedded C",
+      "Robotics",
+      "Circuit Design",
+      "Microcontrollers"
+    ]
+  },
+  {
+    "date": "2015 – 2017",
+    "role": "High School (+2 Science)",
+    "company": "SOS Hermann Gmeiner School",
+    "location": "Gandaki, Pokhara, Nepal",
+    "description": "Majored in Physics and Mathematics with high academic honors. Active participant in regional science exhibitions and mathematics Olympiads.",
+    "skills": [
+      "Physics",
+      "Advanced Mathematics",
+      "Analytical Reasoning"
+    ]
+  }
+]

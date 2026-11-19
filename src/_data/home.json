@@ -1,0 +1,50 @@
+{
+  "stats": [
+    {
+      "figure": "05+",
+      "label": "PEER-REVIEWED / PUBLICATIONS",
+      "detail": "ACL Anthology, LREC 2026, CHiPSAL, AACL"
+    },
+    {
+      "figure": "01",
+      "label": "KU ENTRANCE / TOPPER RANK",
+      "detail": "1st in Artificial Intelligence (Overall 35th KU Merit)"
+    },
+    {
+      "figure": "04+",
+      "label": "PRODUCTION / EDGE AI ENGINES",
+      "detail": "Krishi Chasma SDK, Nepali Tokenizer, Speech TTS"
+    },
+    {
+      "figure": "100%",
+      "label": "VERIFIED REPOSITORIES / DATA",
+      "detail": "Open-access models on Hugging Face & GitHub"
+    }
+  ],
+  "competencies": [
+    {
+      "icon": "book-open",
+      "title": "Low-Resource Indic & Nepali NLP",
+      "description": "Morphological segmentation, lemmatization, cross-lingual WordNet disambiguation, phonetic modeling, and indigenous Devanagari tokenizers.",
+      "badge": "Core Research"
+    },
+    {
+      "icon": "cpu",
+      "title": "Agentic Workflows & LLM Quantization",
+      "description": "Autonomous multi-agent orchestration, QLoRA fine-tuning (AstroCLIMB), Graph RAG, Knowledge Graphs, and on-device quantization.",
+      "badge": "Applied AI"
+    },
+    {
+      "icon": "layers",
+      "title": "Embedded Edge AI & Hardware IoT",
+      "description": "ESP32 & Raspberry Pi edge intelligence, TinyML model compression, sensor telemetry (soil/temperature), and autonomous SLAM navigation.",
+      "badge": "Hardware Systems"
+    },
+    {
+      "icon": "terminal",
+      "title": "Production Tooling & Data Scraping",
+      "description": "PyTorch, Hugging Face Transformers, SentencePiece, NLTK, FastMCP, Docker, Linux/Bash automation, and high-concurrency web data extraction.",
+      "badge": "Infrastructure"
+    }
+  ]
+}

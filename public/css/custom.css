@@ -1,0 +1,316 @@
+/* ==========================================================================
+   Site customizations on top of the base theme
+   ========================================================================== */
+
+/* --- Text-based logo (replaces the template logo image) ------------------ */
+.site-logo {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.2;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+.site-logo::after {
+    content: ".";
+    color: #ffae00;
+}
+.logo a.site-logo:hover { color: #ffae00; }
+.f-logo .site-logo { font-size: 34px; }
+
+/* --- Homepage hero ------------------------------------------------------- */
+.s-slider-content2 .hero-name {
+    font-size: clamp(42px, 7vw, 96px);
+    font-weight: 800;
+    text-transform: lowercase;
+    letter-spacing: -1px;
+    margin-bottom: 6px;
+}
+.s-slider-content2 .hero-role {
+    font-size: clamp(16px, 2vw, 24px);
+    color: #ffae00;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    min-height: 1.4em;
+}
+.img-main2 img {
+    max-width: 420px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* --- Stats boxes --------------------------------------------------------- */
+.follower-contner .icon i { font-size: 34px; color: #ffae00; }
+.follower-contner .text h5 { font-size: 15px; text-transform: uppercase; }
+
+/* --- Project / research cards ------------------------------------------- */
+.bsingle__content h3,
+.bsingle__content h4 { margin-bottom: 10px; }
+.pub-title { font-size: 24px; line-height: 1.4; }
+.pub-authors { color: #b9b9b9; margin-bottom: 14px; }
+.project-links { margin-top: 18px; display: flex; gap: 10px; flex-wrap: wrap; }
+.project-links .btn { margin-right: 0; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.project-tags span {
+    display: inline-block;
+    padding: 5px 12px;
+    border: 1px solid rgba(255, 174, 0, 0.45);
+    border-radius: 30px;
+    font-size: 12px;
+    color: #ffae00;
+    background: rgba(255, 174, 0, 0.06);
+}
+
+/* --- Experience cards ---------------------------------------------------- */
+.exp-card .exp-company { color: #ffae00; font-weight: 600; margin-bottom: 12px; }
+.exp-points { list-style: none; padding-left: 0; margin-bottom: 16px; }
+.exp-points li {
+    position: relative;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    color: #c9c9c9;
+}
+.exp-points li::before {
+    content: "\25B8";
+    position: absolute;
+    left: 0;
+    color: #ffae00;
+}
+.exp-points strong { color: #fff; }
+
+/* --- BibTeX -------------------------------------------------------------- */
+.bibtex-box {
+    margin-top: 20px;
+    border: 1px solid #2e2e2e;
+    border-radius: 8px;
+    background: #141414;
+}
+.bibtex-box summary {
+    cursor: pointer;
+    padding: 12px 16px;
+    color: #ffae00;
+    font-weight: 600;
+    list-style: none;
+}
+.bibtex-box summary::-webkit-details-marker { display: none; }
+.bibtex-box summary::before { content: "+ "; }
+.bibtex-box[open] summary::before { content: "\2212 "; }
+.bibtex-box pre {
+    margin: 0;
+    padding: 0 16px 16px;
+    overflow-x: auto;
+    background: transparent;
+    color: #d6d6d6;
+}
+.bibtex-box code { background: transparent; color: #d6d6d6; font-size: 13px; }
+
+/* --- Markdown post content ---------------------------------------------- */
+.details__content h3 { font-size: 26px; margin: 30px 0 14px; }
+.details__content h4 { font-size: 21px; margin: 26px 0 12px; }
+.details__content ul, .details__content ol { padding-left: 22px; margin-bottom: 20px; }
+.details__content li { margin-bottom: 8px; color: #cfcfcf; }
+.details__content img { max-width: 100%; height: auto; border-radius: 8px; }
+.details__content a { color: #ffae00; text-decoration: underline; }
+.details__content a:hover { color: #fff; }
+.details__content hr { border: 0; border-top: 1px solid #2e2e2e; margin: 30px 0; }
+
+/* Code blocks & inline code (markdown output) */
+.details__content pre,
+.bsingle__content pre,
+.widget pre {
+    background: #141414;
+    border: 1px solid #2e2e2e;
+    border-radius: 8px;
+    padding: 18px;
+    overflow-x: auto;
+    margin: 22px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+.details__content code,
+.bsingle__content code,
+.widget code {
+    background: #1e1e1e;
+    color: #ffb74d;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.92em;
+}
+.details__content pre code,
+.bsingle__content pre code {
+    background: transparent;
+    color: #e6e6e6;
+    padding: 0;
+}
+
+/* KaTeX math */
+.katex { color: #f0f0f0; }
+.katex-display { margin: 24px 0; overflow-x: auto; }
+
+/* --- Contact card -------------------------------------------------------- */
+.contact-card {
+    padding: 45px 40px;
+    border: 1px solid #2e2e2e;
+    border-radius: 12px;
+    background: #161616 !important;
+}
+.contact-card-title { font-size: 28px; margin-bottom: 14px; }
+.contact-card-text { color: #c9c9c9; margin-bottom: 20px; }
+.contact-card-list { list-style: none; padding: 0; margin: 0 0 26px; }
+.contact-card-list li { margin-bottom: 12px; color: #d6d6d6; }
+.contact-card-list i { color: #ffae00; margin-right: 10px; }
+.contact-card-social a {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 18px;
+    color: #bdbdbd;
+    transition: color 0.25s;
+}
+.contact-card-social a:hover { color: #ffae00; }
+
+/* --- Sidebar widget spacing --------------------------------------------- */
+.widget { margin-bottom: 40px; }
+.widget_text p { color: #c9c9c9; }
+.widget .blog__btn .btn { margin-top: 8px; }
+
+/* --- Buttons in dark sections ------------------------------------------- */
+.blog__btn .btn { display: inline-block; }
+
+/* --- Post navigation "blog-filter" middle link --------------------------- */
+.blog-filter {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 54px;
+    height: 54px;
+    border: 1px solid #3a3a3a;
+    border-radius: 50%;
+    color: #ffae00;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+.blog-filter:hover {
+    background: #ffae00;
+    border-color: #ffae00;
+    color: #111;
+}
+
+/* --- Sidebar recent-post date ------------------------------------------- */
+.widget_recent_entries .post-date {
+    display: block;
+    font-size: 13px;
+    color: #8f8f8f;
+    margin-top: 4px;
+}
+.widget_recent_entries li { margin-bottom: 14px; }
+
+/* --- Accessibility / misc ------------------------------------------------ */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 2px solid #ffae00;
+    outline-offset: 3px;
+}
+img { max-width: 100%; }
+main { overflow-x: hidden; }
+
+/* ==========================================================================
+   Page titles are now <h1> — mirror the theme's <h2> styling
+   ========================================================================== */
+.section-title h1 {
+    font-size: 40px;
+    padding-bottom: 0;
+    margin-bottom: 15px !important;
+    position: relative;
+}
+.details__content h1 {
+    font-size: 32px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    padding-right: 0;
+}
+.breadcrumb-title .crumb-label {
+    display: block;
+    font-size: 40px;
+    margin-bottom: 25px;
+    line-height: 1;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+/* ==========================================================================
+   Vertical eyebrow badge: keep it clear of neighbouring column content
+   ========================================================================== */
+.section-title h6 {
+    left: -20px;
+}
+
+/* ==========================================================================
+   List markers
+   - card meta rows: no stray disc bullets (base theme forces disc on
+     every ul li inside .bsingle__content)
+   - experience points: arrow marker only (was bullet + arrow)
+   - post markdown lists: restore markers (global `li { list-style: none }`
+     was hiding them)
+   ========================================================================== */
+.bsingle__content .meta-info ul { padding-left: 0; }
+.bsingle__content .meta-info ul li { list-style: none; }
+.bsingle__content ul.exp-points,
+ul.exp-points { list-style: none; padding-left: 0; }
+.bsingle__content ul.exp-points li,
+ul.exp-points li { list-style: none; }
+.details__content ul li { list-style: disc; }
+.details__content ol li { list-style: decimal; }
+.details__content ul ul li { list-style: circle; }
+.details__content ul ul ul li { list-style: square; }
+.details__content ol ol li { list-style: lower-alpha; }
+
+/* ==========================================================================
+   Links that inherited the theme's global `a { color: #000 }` and would
+   render black (invisible) on the dark background
+   ========================================================================== */
+.slider-info a {
+    color: #fff;
+    text-decoration: none;
+}
+.slider-info a:hover { color: #ffae00; }
+.slider-info .email,
+.slider-info .phone {
+    white-space: nowrap;
+    font-size: 14px;
+}
+.f-contact2 h4 a {
+    color: #fff;
+    text-decoration: none;
+}
+.f-contact2 h4 a:hover { color: #ffae00; }
+.posts_navigation .prev-link h4 a,
+.posts_navigation .next-link h4 a {
+    color: #fff;
+    text-decoration: none;
+}
+.related-post-wrap .rp__content h3 a {
+    color: #fff;
+    text-decoration: none;
+}
+.related-post-wrap .rp__content h3:hover a { color: #ffae00; }
+
+/* Blog listing post titles (anchors inside .bsingle__content h2) */
+.bsingle__content h2 a {
+    color: #fff;
+    text-decoration: none;
+}
+.bsingle__content h2:hover a { color: #ffae00; }
+
+/* Long post titles in prev/next nav: don't clip to one line or force
+   title-case over the author's capitalisation */
+.posts_navigation .prev-link h4,
+.posts_navigation .next-link h4 {
+    height: auto;
+    min-height: 30px;
+    text-transform: none;
+}

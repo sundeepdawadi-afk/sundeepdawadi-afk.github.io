@@ -1,0 +1,74 @@
+[
+  {
+    "date": "Jul 2019 – Present",
+    "role": "Brand Builder & Digital Marketing Consultant",
+    "company": "Self-Employed / Independent Consultant",
+    "location": "Pokhara & Kathmandu, Nepal",
+    "description": "Provide end-to-end strategic digital marketing, brand narrative construction, content strategy, and digital transformation consulting for growth-stage businesses and educational institutions.",
+    "skills": [
+      "Brand Architecture",
+      "Search Engine Strategy",
+      "Client Acquisition",
+      "Analytics"
+    ]
+  },
+  {
+    "date": "May 2021 – Dec 2023",
+    "role": "Marketing Manager",
+    "company": "Bigyapan Inc",
+    "location": "Kathmandu, Nepal",
+    "description": "Spearheaded integrated marketing strategies, client communication frameworks, cross-functional creative teams, and multi-channel campaign executions driving substantial brand visibility and conversion metrics.",
+    "skills": [
+      "Campaign Management",
+      "Team Leadership",
+      "B2B Representation",
+      "Data-Driven Growth"
+    ]
+  },
+  {
+    "date": "Oct 2019 – Jun 2022",
+    "role": "Search Engine Optimization (SEO) Manager",
+    "company": "inGrails Pvt. Ltd. / Veda App (वेद)",
+    "companyUrl": "https://veda-app.com",
+    "companyBadge": "Nepal’s Premier EdTech & School ERP",
+    "location": "Lalitpur, Nepal",
+    "points": [
+      "Directed search engine visibility, technical semantic structuring, and website architecture for Nepal’s largest education management software platform.",
+      "Collaborated intimately with engineering and product teams to optimize core web vitals, indexation logic, and on-page technical performance.",
+      "Spearheaded initial phases of Veda’s adoption of scalable organic inbound marketing strategies across web and mobile ecosystems."
+    ],
+    "skills": [
+      "Technical SEO",
+      "Information Architecture",
+      "Organic Traffic Scaling",
+      "Product Alignment"
+    ]
+  },
+  {
+    "date": "2018 – 2021",
+    "role": "Co-Founder & Technology Lead",
+    "company": "Sarangcode Technology",
+    "location": "Kathmandu, Nepal",
+    "description": "Co-founded a boutique technology and software services studio. Managed project discovery, client roadmaps, web development deliveries, and digital marketing rollouts.",
+    "skills": [
+      "Entrepreneurship",
+      "Full-Stack Delivery",
+      "Tech Strategy"
+    ]
+  },
+  {
+    "date": "Oct 2017 – Dec 2019",
+    "role": "Digital Marketing Strategist",
+    "company": "Digital Gurkha",
+    "companyUrl": "https://digitalgurkha.com",
+    "companyBadge": "Pioneering Digital Upskilling Academy",
+    "location": "Kupondole, Lalitpur, Nepal",
+    "description": "Formulated integrated digital marketing curricula, audience engagement frameworks, and analytical performance dashboards. Specialized in behavioral audience segmentation to maximize organic community reach.",
+    "skills": [
+      "Content Marketing",
+      "Community Growth",
+      "Analytics Reporting",
+      "Educational Strategy"
+    ]
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "name": "sundeepdawadi-afk.github.io",
+  "version": "2.0.0",
+  "description": "Portfolio, research and blog of Sundeep Dawadi — AI & NLP Researcher",
+  "type": "module",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy",
+    "start": "eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sundeepdawadi-afk/sundeepdawadi-afk.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "eleventy",
+    "nlp",
+    "research",
+    "blog"
+  ],
+  "author": "Sundeep Dawadi",
+  "license": "MIT",
+  "homepage": "https://sundeepdawadi-afk.github.io",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

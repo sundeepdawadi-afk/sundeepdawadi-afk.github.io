@@ -1,0 +1,140 @@
+---
+layout: base.njk
+permalink: /experience/
+title: Experience
+breadcrumbTitle: Experience
+description: Education, research stewardship and industry experience of Sundeep Dawadi — from Kathmandu University AI labs to product leadership in Nepal’s EdTech sector.
+---
+{% include "partials/breadcrumb.njk" %}
+<!-- experience-area -->
+<section class="inner-blog pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title p-relative mb-50 pl-60">
+                    <h6>Timeline</h6>
+                    <h1>Experience &amp; Education</h1>
+                    <p>A path from electronics engineering into low-resource NLP research — with product and growth leadership along the way.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title p-relative mb-40 pl-60">
+                    <h6>Education</h6>
+                    <h3>Academic Background</h3>
+                </div>
+                {% for item in education %}
+                <div class="bsingle__post mb-40 exp-card">
+                    <div class="bsingle__content">
+                        <div class="meta-info">
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i> {{ item.date }}</li>
+                                <li><i class="fas fa-map-marker-alt"></i> {{ item.location }}</li>
+                            </ul>
+                        </div>
+                        <h4>{{ item.role }}</h4>
+                        <p class="exp-company">
+                            {% if item.companyUrl %}
+                            <a href="{{ item.companyUrl }}" target="_blank" rel="noopener noreferrer">{{ item.company }}</a>
+                            {% else %}
+                            {{ item.company }}
+                            {% endif %}
+                        </p>
+                        {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                        {% if item.points %}
+                        <ul class="exp-points">
+                            {% for point in item.points %}
+                            <li>{{ point | safe }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if item.skills %}
+                        <div class="post__tag project-tags">
+                            {% for t in item.skills %}
+                            <span>{{ t }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-lg-6">
+                <div class="section-title p-relative mb-40 pl-60">
+                    <h6>Work</h6>
+                    <h3>Professional Experience</h3>
+                </div>
+                {% for item in experience %}
+                <div class="bsingle__post mb-40 exp-card">
+                    <div class="bsingle__content">
+                        <div class="meta-info">
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i> {{ item.date }}</li>
+                                <li><i class="fas fa-map-marker-alt"></i> {{ item.location }}</li>
+                            </ul>
+                        </div>
+                        <h4>{{ item.role }}</h4>
+                        <p class="exp-company">
+                            {% if item.companyUrl %}
+                            <a href="{{ item.companyUrl }}" target="_blank" rel="noopener noreferrer">{{ item.company }}</a>
+                            {% else %}
+                            {{ item.company }}
+                            {% endif %}
+                        </p>
+                        {% if item.description %}<p>{{ item.description }}</p>{% endif %}
+                        {% if item.points %}
+                        <ul class="exp-points">
+                            {% for point in item.points %}
+                            <li>{{ point | safe }}</li>
+                            {% endfor %}
+                        </ul>
+                        {% endif %}
+                        {% if item.skills %}
+                        <div class="post__tag project-tags">
+                            {% for t in item.skills %}
+                            <span>{{ t }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <!-- collaborations & mentorship -->
+        <div class="row mt-60">
+            <div class="col-lg-12">
+                <div class="section-title p-relative mb-50 pl-60">
+                    <h6>Collaborations</h6>
+                    <h2>Mentorship &amp; Contributions</h2>
+                </div>
+            </div>
+            {% for c in achievements.collabs %}
+            <div class="col-lg-6 col-md-6">
+                <div class="bsingle__post mb-40 exp-card">
+                    <div class="bsingle__content">
+                        <div class="meta-info">
+                            <ul>
+                                <li><i class="fas fa-building"></i> {{ c.institution }}</li>
+                                <li><i class="fas fa-user"></i> {{ c.role }}</li>
+                            </ul>
+                        </div>
+                        <h4>{{ c.title }}</h4>
+                        <p>{{ c.description }}</p>
+                        {% if c.badge %}
+                        <div class="post__tag project-tags">
+                            <span>{{ c.badge }}</span>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- experience-area-end -->
+{% include "partials/scrollbox.njk" %}
+{% include "partials/contact.njk" %}

@@ -1,0 +1,63 @@
+---
+layout: base.njk
+permalink: /projects/
+title: Projects
+breadcrumbTitle: Projects
+description: Systems, SDKs and open-source tooling by Sundeep Dawadi — agricultural edge AI, Devanagari tokenizers, data automation and robotics.
+---
+{% include "partials/breadcrumb.njk" %}
+<!-- projects-area -->
+<section class="inner-blog pt-120 pb-120">
+    <div class="container">
+        <div class="row align-items-center mb-50">
+            <div class="col-lg-8 col-md-12">
+                <div class="section-title p-relative mb-30 pl-60">
+                    <h6>Portfolio</h6>
+                    <h1>Systems &amp; Engineering</h1>
+                    <p>Research tooling, edge intelligence platforms, and open-source releases — each built for real constraints.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for project in projects %}
+            <div class="col-lg-4 col-md-6">
+                <div class="bsingle__post mb-50 hover-zoomin">
+                    <div class="bsingle__post-thumb">
+                        <img src="/img/ph/project-0{{ ((loop.index0 % 6) + 1) }}.svg" alt="{{ project.title }} (cover placeholder)">
+                    </div>
+                    <div class="bsingle__content">
+                        <div class="meta-info">
+                            <ul>
+                                <li><i class="fas fa-folder-open"></i> {{ project.category }}</li>
+                                {% if project.badge %}
+                                <li><i class="fas fa-award"></i> {{ project.badge }}</li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                        <h3>{{ project.title }}</h3>
+                        <p>{{ project.description }}</p>
+                        {% if project.technologies %}
+                        <div class="post__tag project-tags">
+                            {% for t in project.technologies | head(5) %}
+                            <span>{{ t }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                        <div class="blog__btn project-links">
+                            {% if project.githubUrl %}
+                            <a href="{{ project.githubUrl }}" class="btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                            {% endif %}
+                            {% if project.demoUrl %}
+                            <a href="{{ project.demoUrl }}" class="btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- projects-area-end -->
+{% include "partials/scrollbox.njk" %}
+{% include "partials/contact.njk" %}

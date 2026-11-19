@@ -1,0 +1,156 @@
+---
+layout: base.njk
+---
+{% set postTags = tags or [] %}
+{% set postAuthor = author or site.author %}
+{% set postReadTime = readTime %}
+{% set navIndex = 0 %}
+{% for p in collections.posts %}
+  {% if p.url == page.url %}
+    {% set navIndex = loop.index0 %}
+  {% endif %}
+{% endfor %}
+{% set prevPost = collections.posts[navIndex - 1] %}
+{% set nextPost = collections.posts[navIndex + 1] %}
+{% include "partials/breadcrumb.njk" %}
+<!-- inner-blog -->
+<section class="inner-blog pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="blog-details-wrap">
+                    <div class="details__content pb-30">
+                        <h1>{{ title }}</h1>
+                        <div class="meta-info">
+                            <ul>
+                                <li><i class="fas fa-user"></i> {{ postAuthor }}</li>
+                                <li><i class="fas fa-calendar-alt"></i> {{ pubDate | readableDate }}</li>
+                                {% if postReadTime %}
+                                <li><i class="fas fa-clock"></i> {{ postReadTime }}</li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                        {{ content | safe }}
+                        {% if postTags.length %}
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12">
+                                <div class="post__tag">
+                                    <h5>Related Tags</h5>
+                                    <ul>
+                                        {% for tag in postTags %}
+                                        <li><a href="/tags/{{ tag | slugifyTag }}/">{{ tag }}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                    {% if prevPost or nextPost %}
+                    <div class="posts_navigation pt-35 pb-35">
+                        <div class="row align-items-center">
+                            <div class="col-xl-5 col-md-5">
+                                {% if nextPost %}
+                                <div class="prev-link">
+                                    <span>Newer Post</span>
+                                    <h4><a href="{{ nextPost.url }}">{{ nextPost.data.title }}</a></h4>
+                                </div>
+                                {% endif %}
+                            </div>
+                            <div class="col-xl-2 col-md-2 text-center">
+                                <a href="/blog/" class="blog-filter"><i class="fas fa-th-large"></i></a>
+                            </div>
+                            <div class="col-xl-5 col-md-5">
+                                {% if prevPost %}
+                                <div class="next-link text-right">
+                                    <span>Older Post</span>
+                                    <h4><a href="{{ prevPost.url }}">{{ prevPost.data.title }}</a></h4>
+                                </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endif %}
+                    {% set relatedCount = 0 %}
+                    <div class="related__post mt-45 mb-85">
+                        <div class="post-title">
+                            <h4>Related Post</h4>
+                        </div>
+                        <div class="row">
+                            {% for relatedPost in collections.posts | related(page.url, 2) %}
+                            <div class="col-md-6">
+                                <div class="related-post-wrap mb-30">
+                                    <div class="post-thumb">
+                                        <a href="{{ relatedPost.url }}"><img src="/img/ph/blog-0{{ ((loop.index0 % 3) + 1) }}.svg" alt="{{ relatedPost.data.title }} (cover placeholder)"></a>
+                                    </div>
+                                    <div class="rp__content">
+                                        <h3><a href="{{ relatedPost.url }}">{{ relatedPost.data.title }}</a></h3>
+                                        <p>{{ relatedPost.data.description }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    <div class="avatar__wrap text-center mb-45">
+                        <div class="avatar-img">
+                            <img src="/img/ph/portrait.svg" alt="{{ site.author }}">
+                        </div>
+                        <div class="avatar__info">
+                            <h5>{{ site.author }}</h5>
+                            <div class="avatar__info-social">
+                                {% for s in site.socials %}
+                                <a href="{{ s.url }}" title="{{ s.name }}" target="_blank" rel="noopener noreferrer"><i class="{{ s.icon }}"></i></a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        <div class="avatar__wrap-content">
+                            <p>{{ site.role }} at Kathmandu University. I write about low-resource NLP, Devanagari language technology, and edge AI systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <aside class="sidebar-widget">
+                    <section class="widget widget_text">
+                        <h2 class="widget-title">About</h2>
+                        <div class="textwidget">
+                            <p>Notes on NLP research, quantization, tokenization and shipping ML to the edge — by {{ site.name }}.</p>
+                        </div>
+                    </section>
+                    <section class="widget widget_categories">
+                        <h2 class="widget-title">Tags</h2>
+                        <ul>
+                            {% for tag in collections.tagList %}
+                            <li class="cat-item"><a href="/tags/{{ tag | slugifyTag }}/">{{ tag }}</a></li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                    <section class="widget widget_recent_entries">
+                        <h2 class="widget-title">Recent Posts</h2>
+                        <ul>
+                            {% for r in collections.posts | head(5) %}
+                            <li>
+                                <a href="{{ r.url }}">{{ r.data.title }}</a>
+                                <span class="post-date">{{ r.data.pubDate | readableDate }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </section>
+                    <section class="widget_text widget widget_custom_html">
+                        <h2 class="widget-title">Follow</h2>
+                        <div class="textwidget custom-html-widget">
+                            <div class="widget-social">
+                                {% for s in site.socials %}
+                                <a href="{{ s.url }}" title="{{ s.name }}" target="_blank" rel="noopener noreferrer"><i class="{{ s.icon }}"></i></a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- inner-blog-end -->
+{% include "partials/scrollbox.njk" %}

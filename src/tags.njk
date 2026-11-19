@@ -1,0 +1,50 @@
+---
+pagination:
+  data: collections.tagList
+  size: 1
+  alias: tag
+permalink: "/tags/{{ tag | slugifyTag }}/"
+layout: base.njk
+eleventyComputed:
+  title: "Tag: {{ tag }}"
+  breadcrumbTitle: "{{ tag }}"
+  description: "All posts tagged ‘{{ tag }}’ on the blog of Sundeep Dawadi."
+---
+{% include "partials/breadcrumb.njk" %}
+<section class="inner-blog pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title p-relative mb-50 pl-60">
+                    <h6>Tag</h6>
+                    <h1>Posts tagged “{{ tag }}”</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            {% for post in collections.posts %}
+                {% if tag in post.data.tags %}
+            <div class="col-lg-4 col-md-6">
+                <div class="single-post2 hover-zoomin mb-30 wow fadeInUp">
+                    <div class="blog-thumb2">
+                        <a href="{{ post.url }}"><img src="/img/ph/blog-0{{ ((loop.index0 % 3) + 1) }}.svg" alt="{{ post.data.title }} (cover placeholder)"></a>
+                    </div>
+                    <div class="blog-content2">
+                        <div class="b-meta">
+                            <div class="meta-info">
+                                <ul>
+                                    <li>{{ post.data.pubDate | readableDate }}</li>
+                                    <li>{{ post.data.author or site.author }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
+                    </div>
+                </div>
+            </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% include "partials/scrollbox.njk" %}

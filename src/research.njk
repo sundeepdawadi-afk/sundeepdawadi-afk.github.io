@@ -1,0 +1,104 @@
+---
+layout: base.njk
+permalink: /research/
+title: Research
+breadcrumbTitle: Research
+description: Peer-reviewed publications and research by Sundeep Dawadi on low-resource NLP, Devanagari language understanding, lemmatization and multimodal systems.
+---
+{% include "partials/breadcrumb.njk" %}
+<!-- research-area -->
+<section class="inner-blog pt-120 pb-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title p-relative mb-50 pl-60">
+                    <h6>Publications</h6>
+                    <h1>Research &amp; Publications</h1>
+                    <p>Peer-reviewed and accepted work spanning low-resource Indic NLP, morphological analysis, and multimodal linking.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                {% for pub in research %}
+                <div class="bsingle__post mb-50">
+                    <div class="bsingle__content">
+                        <div class="meta-info">
+                            <ul>
+                                <li><i class="fas fa-calendar-alt"></i> {{ pub.year }}</li>
+                                <li><i class="fas fa-file-alt"></i> {{ pub.venue }}</li>
+                                {% if pub.statusBadge %}
+                                <li><i class="fas fa-circle-check"></i> {{ pub.statusBadge }}</li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                        <h3 class="pub-title">{{ pub.title }}</h3>
+                        <p class="pub-authors"><em>{{ pub.authors | join(", ") }}</em></p>
+                        <p>{{ pub.description }}</p>
+                        {% if pub.tags %}
+                        <div class="post__tag project-tags">
+                            {% for t in pub.tags %}
+                            <span>{{ t }}</span>
+                            {% endfor %}
+                        </div>
+                        {% endif %}
+                        <div class="blog__btn project-links">
+                            {% if pub.paperUrl %}
+                            <a href="{{ pub.paperUrl }}" class="btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-file-pdf"></i> Paper</a>
+                            {% endif %}
+                            {% if pub.doiUrl %}
+                            <a href="{{ pub.doiUrl }}" class="btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-link"></i> DOI</a>
+                            {% endif %}
+                            {% if pub.codeUrl %}
+                            <a href="{{ pub.codeUrl }}" class="btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
+                            {% endif %}
+                        </div>
+                        {% if pub.bibtex %}
+                        <details class="bibtex-box">
+                            <summary><i class="fas fa-quote-left"></i> BibTeX</summary>
+                            <pre><code>{{ pub.bibtex }}</code></pre>
+                        </details>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <aside class="sidebar-widget">
+                    <section class="widget widget_text">
+                        <h2 class="widget-title">Research Profile</h2>
+                        <div class="textwidget">
+                            <p>Find my full citation profile on Google Scholar and paper records on ACL Anthology.</p>
+                            <div class="blog__btn">
+                                <a href="https://scholar.google.com/citations?user=WZlKvaoAAAAJ&hl=en" class="btn" target="_blank" rel="noopener noreferrer"><i class="fas fa-graduation-cap"></i> Google Scholar</a>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="widget widget_categories">
+                        <h2 class="widget-title">Topics</h2>
+                        <ul>
+                            {% set topicSet = [] %}
+                            {% for pub in research %}
+                                {% for t in pub.tags %}
+                                <li class="cat-item">{{ t }}</li>
+                                {% endfor %}
+                            {% endfor %}
+                        </ul>
+                    </section>
+                    <section class="widget widget_text">
+                        <h2 class="widget-title">Collaborate</h2>
+                        <div class="textwidget">
+                            <p>Interested in low-resource NLP or edge intelligence? My inbox is open.</p>
+                            <div class="blog__btn">
+                                <a href="mailto:{{ site.email }}" class="btn">{{ site.email }}</a>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- research-area-end -->
+{% include "partials/scrollbox.njk" %}
+{% include "partials/contact.njk" %}

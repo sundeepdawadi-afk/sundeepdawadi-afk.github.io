@@ -1,0 +1,314 @@
+---
+layout: base.njk
+permalink: /
+title: ""
+description: ""
+---
+<!-- slider-area -->
+<section id="parallax" class="slider-area fix p-relative">
+    <!-- slider-info-area -->
+    <div class="slider-info">
+        <div class="email">
+            <span>email:</span> <a href="mailto:{{ site.email }}">{{ site.email }}</a>
+        </div>
+        <div class="phone">
+            {{ site.location }}
+        </div>
+    </div>
+    <!-- slider-info-area-end -->
+    <div class="social">
+        <span>
+            {% for s in site.socials %}
+            <a href="{{ s.url }}" title="{{ s.name }}" target="_blank" rel="noopener noreferrer"><i class="{{ s.icon }}"></i></a>
+            {% endfor %}
+        </span>
+    </div>
+    <div class="slider-shape ss-two layer" data-depth="0.40"><img src="/img/bg/slider_shape02.png" alt="shape"></div>
+    <div class="slider-active">
+        <div class="single-slider d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="s-slider-content2 mt-100 p-relative">
+                            <h1 class="hero-name" data-animation="fadeInUp" data-delay=".4s">{{ site.name }}</h1>
+                            <p class="hero-role element" data-elements="{{ site.role }},Low-Resource NLP Researcher,Edge AI Engineer"></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-12 col-md-12 p-relative text-center">
+                        <div class="img-main2" data-animation="fadeInRight" data-delay=".2s">
+                            <img src="/img/ph/portrait.svg" alt="Portrait of {{ site.name }} (placeholder)">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- slider-area-end -->
+<!-- followers-area (stats) -->
+<section class="followers p-relative fix">
+    <div class="container">
+        <div class="follower">
+            <div class="row">
+                {% for stat in home.stats %}
+                <div class="col-lg-3 col-md-12 col-sm-12">
+                    <div class="follower-box mb-30">
+                        <div class="follower-contner">
+                            <div class="text">
+                                <h5>{{ stat.figure }} {{ stat.label }}</h5>
+                                <p>{{ stat.detail }}</p>
+                            </div>
+                            <div class="icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- followers-area-end -->
+<!-- services-area (focus / competencies) -->
+<section id="services" class="services-area services-bg p-relative fix pt-120 pb-90">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12">
+                <div class="section-title p-relative mb-50 pl-60 wow fadeInLeft" data-animation="fadeInLeft" data-delay=".4s">
+                    <h6>Focus Areas</h6>
+                    <h2>What I Do?</h2>
+                    <p>Research and engineering at the intersection of low-resource languages, applied ML, and edge hardware.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 text-right">
+                <a href="#contact" class="btn ss-btn white smoth-scroll" data-animation="fadeInLeft" data-delay=".4s">Work With Me</a>
+            </div>
+        </div>
+        <div class="row">
+            {% for item in home.competencies %}
+            <div class="col-lg-4 col-md-6">
+                <div class="s-single-services text-center mb-30 wow fadeInUp" data-animation="fadeInUp" data-delay="{{ 0.2 * loop.index + 0.2 }}s">
+                    <div class="services-icon mb-30">
+                        <img src="/img/icon/se-icon{{ (loop.index0 % 3) + 1 }}.png" alt="">
+                    </div>
+                    <div class="second-services-content">
+                        <h3>{{ item.title }}</h3>
+                        <p>{{ item.description }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- services-area-end -->
+<!-- skill-area (about) -->
+<section id="skill" class="skill-area p-relative fix pt-120 pb-120">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-12 col-sm-12 pr-30">
+                <div class="skills-img wow fadeInRight" data-animation="fadeInRight" data-delay=".4s">
+                    <img src="/img/ph/about.svg" alt="About {{ site.name }} (placeholder)" class="img">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                <div class="skills-content s-about-content">
+                    <div class="skills-title p-relative pb-20">
+                        <h6>About Me</h6>
+                        <h2>{{ site.tagline }}</h2>
+                    </div>
+                    <p>I’m <strong>{{ site.name }}</strong>, an Artificial Intelligence undergraduate and researcher at <strong>Kathmandu University</strong>. I bridge computational linguistics, low-resource Indic morphology, and autonomous edge IoT systems with real-world community impact.</p>
+                    <div class="skills-content s-about-content mt-50">
+                        <div class="skills">
+                            <div class="skill mb-30">
+                                <div class="skill-name">NLP &amp; Transformers</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" id="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-30">
+                                <div class="skill-name">Python, PyTorch &amp; MLOps</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" id="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-30">
+                                <div class="skill-name">Edge IoT &amp; Embedded AI</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" id="85"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-btn mt-30">
+                        <a href="/experience/" class="btn ss-btn">My Experience</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- skill-area-end -->
+<!-- gallery-area (featured projects) -->
+<section id="portfolio" class="pt-120 pb-110" style="background: #111111;">
+    <div class="container">
+        <div class="portfolio">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="section-title p-relative mb-50 pl-60 wow fadeInLeft" data-animation="fadeInLeft" data-delay=".4s">
+                        <h6>Portfolio</h6>
+                        <h2>Recent Works</h2>
+                        <p>Selected systems and research tooling — from agricultural edge intelligence to Devanagari NLP.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 text-right">
+                    <a href="/projects/" class="btn ss-btn white">All Projects</a>
+                </div>
+            </div>
+            <div class="home-blog-active wow fadeInUp" data-animation="fadeInUp" data-delay=".4s">
+                {% for project in projects | head(6) %}
+                <div class="grid-item financial banking insurance">
+                    <a class="popup-image" href="/img/ph/project-0{{ loop.index }}.svg">
+                        <figure class="gallery-image">
+                            <img src="/img/ph/project-0{{ loop.index }}.svg" alt="{{ project.title }} (placeholder cover)" class="img">
+                            <figcaption>
+                                <span>{{ project.category }}</span>
+                                <h4>{{ project.title }}</h4>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- gallery-area-end -->
+<!-- counter-area -->
+<div class="counter-area p-relative pt-120 pb-120" style="background-color: #111; ">
+    <div class="container">
+        <div class="row p-relative">
+            {% for pub in research | head(4) %}
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="single-counter wow fadeInUp animated" data-animation="fadeInDown animated" data-delay=".2s">
+                    <div class="counter p-relative">
+                        <div class="number">0{{ loop.index }}</div>
+                        <span class="count">{{ pub.year }}</span>
+                        <p>{{ pub.venue }}</p>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- counter-area-end -->
+<!-- research-preview -->
+<section id="research" class="awards-area after-none contact-bg pb-120 p-relative pt-120">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title p-relative mb-50 pl-60 wow fadeInLeft" data-animation="fadeInLeft" data-delay=".4s">
+                    <h6>Research</h6>
+                    <h2>Selected Publications</h2>
+                    <p>Peer-reviewed and accepted work on low-resource NLP, Devanagari language understanding, and multimodal systems.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 text-right">
+                <a href="/research/" class="btn ss-btn white">All Publications</a>
+            </div>
+            <div class="col-lg-12">
+                {% for pub in research | head(3) %}
+                <div class="awards-box p-relative hover-zoomin">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-9">
+                            <span>{{ pub.venue }}</span>
+                            <h3>{{ pub.title }}</h3>
+                        </div>
+                        <div class="col-lg-3 text-right">
+                            <span class="sine">{{ pub.year }}</span>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- research-preview-end -->
+<!-- awards-area -->
+<section id="awards" class="awards-area after-none contact-bg pb-120 p-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="section-title p-relative mb-50 pl-60 wow fadeInLeft" data-animation="fadeInLeft" data-delay=".4s">
+                    <h6>Honors</h6>
+                    <h2>Awards &amp; Recognitions</h2>
+                    <p>Hackathon victories, academic distinctions, and showcase wins earned during my journey.</p>
+                </div>
+            </div>
+            <div class="col-lg-6"></div>
+            <div class="col-lg-12">
+                {% for award in achievements.awards %}
+                <div class="awards-box p-relative hover-zoomin">
+                    <div class="row justify-content-center align-items-center">
+                        <div class="col-lg-9">
+                            <span>{{ award.meta }}</span>
+                            <h3>{{ award.title }}</h3>
+                        </div>
+                        <div class="col-lg-3 text-right">
+                            <span class="sine">{{ award.rank }}</span>
+                        </div>
+                    </div>
+                    <div class="layer img-hover" data-depth="0.10"><img src="/img/bg/awads-img01.png" alt="shape"></div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- awards-area-end -->
+<!-- blog-area -->
+<section id="blog" class="blog-area p-relative fix pt-120 pb-90" style="background: #1c1c1c;">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-6">
+                <div class="section-title p-relative mb-50 pl-60 wow fadeInLeft" data-animation="fadeInLeft" data-delay=".4s">
+                    <h6>Insights</h6>
+                    <h2>Blog &amp; Insights</h2>
+                    <p>Engineering notes on quantization, tokenization, and low-resource language methodologies.</p>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 text-right">
+                <a href="/blog/" class="btn ss-btn white" data-animation="fadeInLeft" data-delay=".4s">All Posts</a>
+            </div>
+        </div>
+        <div class="row">
+            {% for post in collections.posts | head(3) %}
+            <div class="col-lg-4 col-md-6 fix">
+                <div class="single-post2 hover-zoomin mb-30 wow fadeInUp animated" data-animation="fadeInUp" data-delay=".4s">
+                    <div class="blog-thumb2">
+                        {% if post.data.tags %}<h6>{{ post.data.tags[0] }}</h6>{% endif %}
+                        <a href="{{ post.url }}"><img src="/img/ph/blog-0{{ loop.index }}.svg" alt="{{ post.data.title }} (cover placeholder)"></a>
+                    </div>
+                    <div class="blog-content2">
+                        <div class="b-meta">
+                            <div class="meta-info">
+                                <ul>
+                                    <li>{{ post.data.pubDate | readableDate }}</li>
+                                    <li>{{ post.data.author or site.author }}</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4><a href="{{ post.url }}">{{ post.data.title }}</a></h4>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- blog-area-end -->
+{% include "partials/scrollbox.njk" %}
+{% include "partials/contact.njk" %}

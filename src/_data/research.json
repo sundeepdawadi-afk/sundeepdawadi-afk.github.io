@@ -1,0 +1,125 @@
+[
+  {
+    "id": "devanagari-nlu-chipsal-2025",
+    "title": "Paramananda@NLU of Devanagari Script Languages 2025: Detection of Language, Hate Speech and Targets using FastText and BERT",
+    "venue": "CHiPSAL 2025 (COLING Workshop) / ACL Anthology",
+    "year": "2025",
+    "statusBadge": "ACL Anthology • COLING 2025",
+    "authors": [
+      "Darwin Acharya",
+      "Sundeep Dawadi",
+      "Shivram Saud",
+      "Sunil Regmi"
+    ],
+    "description": "Comparative analysis of FastText and BERT architectures for multi-task Natural Language Understanding across 5 Devanagari script languages (Nepali, Marathi, Sanskrit, Bhojpuri, Hindi). Evaluates language identification, hate speech detection, and target attribution.",
+    "paperUrl": "https://aclanthology.org/2025.chipsal-1.12/",
+    "tags": [
+      "Devanagari NLU",
+      "Hate Speech Detection",
+      "FastText",
+      "BERT",
+      "Multilingual NLP"
+    ],
+    "bibtex": "@inproceedings{acharya2025paramananda,\n  title={Paramananda@NLU of Devanagari Script Languages 2025: Detection of Language, Hate Speech and Targets using FastText and BERT},\n  author={Acharya, Darwin and Dawadi, Sundeep and Saud, Shivram and Regmi, Sunil},\n  booktitle={Proceedings of the First Workshop on Challenges in Processing South Asian Languages (CHiPSAL 2025)},\n  year={2025},\n  publisher={Association for Computational Linguistics}\n}"
+  },
+  {
+    "id": "astroclimb-qlora-2026",
+    "title": "PSGS@2026: From Figures to Citation Graphs: QLoRA Based Multimodal Linking for AstroCLIMB",
+    "venue": "4th Workshop on AI for Scientific Publications (WASP) @ AACL-IJCNLP / OpenReview",
+    "year": "2026",
+    "statusBadge": "AACL-IJCNLP • OpenReview",
+    "authors": [
+      "PSGS Team",
+      "Sundeep Dawadi et al."
+    ],
+    "description": "Shared task system description paper for AstroCLIMB. Reconstructed scientific citation and structural graphs purely from illustrations, figures, and captions without metadata access by fine-tuning vision-language foundation models via QLoRA.",
+    "paperUrl": "https://openreview.net/forum?id=~Sundeep_Dawadi1",
+    "tags": [
+      "Vision-Language Models",
+      "Multimodal Citation Linking",
+      "QLoRA",
+      "AstroCLIMB",
+      "Graph Mining"
+    ],
+    "bibtex": "@inproceedings{dawadi2026psgs,\n  title={PSGS@2026: From Figures to Citation Graphs: QLoRA Based Multimodal Linking for AstroCLIMB},\n  author={PSGS Team and Dawadi, Sundeep},\n  booktitle={Proceedings of the 4th Workshop on AI for Scientific Publications (WASP) @ AACL-IJCNLP},\n  year={2026}\n}"
+  },
+  {
+    "id": "nepali-lemmatization-lrec-2026",
+    "title": "Nepali Lemmatization with Multilingual Transformers: Intrinsic and Extrinsic Evaluation in a Low-Resource Setting",
+    "venue": "Language Resources and Evaluation Conference (LREC)",
+    "year": "2026",
+    "statusBadge": "Accepted for LREC 2026",
+    "authors": [
+      "Sunil Regmi",
+      "Sundeep Dawadi",
+      "Bal Krishna Bal"
+    ],
+    "description": "Investigated neural morphological analysis and lemmatization for low-resource Nepali using multilingual text-to-text sequence generation transformers (mBART-50, mT5-base/small) with comprehensive intrinsic and downstream extrinsic evaluations.",
+    "doi": "10.63317/2o6euz7qakr5",
+    "doiUrl": "https://doi.org/10.63317/2o6euz7qakr5",
+    "tags": [
+      "Morphological Analysis",
+      "Lemmatization",
+      "Nepali NLP",
+      "Sequence-to-Sequence",
+      "Low-Resource"
+    ],
+    "bibtex": "@inproceedings{regmi2026nepali,\n  title={Nepali Lemmatization with Multilingual Transformers: Intrinsic and Extrinsic Evaluation in a Low-Resource Setting},\n  author={Regmi, Sunil and Dawadi, Sundeep and Bal, Bal Krishna},\n  booktitle={Proceedings of the Language Resources and Evaluation Conference (LREC 2026)},\n  year={2026},\n  doi={10.63317/2o6euz7qakr5}\n}"
+  },
+  {
+    "id": "hindi-nepali-cl-wsd",
+    "title": "Opinionated Hindi-Nepali Cross-Lingual Corpus & Word Sense Disambiguation (CL-WSD)",
+    "venue": "AISSR Lab / Kathmandu University (4th Semester)",
+    "year": "2024",
+    "statusBadge": "Completed Benchmark",
+    "authors": [
+      "Sundeep Dawadi",
+      "Research Collaborators"
+    ],
+    "description": "Co-engineered a high-quality parallel corpus comprising 20,000 Hindi-Nepali sentence pairs. Established benchmark evaluation protocols for Cross-Lingual Word Sense Disambiguation to evaluate pivot-based transfer learning.",
+    "tags": [
+      "Corpus Engineering",
+      "Cross-Lingual WSD",
+      "Parallel Corpora",
+      "Transfer Learning"
+    ],
+    "bibtex": "@article{dawadi2024crosslingual,\n  title={Opinionated Hindi-Nepali Cross-Lingual Corpus and Word Sense Disambiguation},\n  author={Dawadi, Sundeep and Collaborators},\n  journal={AISSR Lab Technical Reports, Kathmandu University},\n  year={2024}\n}"
+  },
+  {
+    "id": "realtime-nepali-tts",
+    "title": "Optimized Real-Time Nepali Text-to-Speech (TTS) Inference Engine",
+    "venue": "Kathmandu University Project Showcase (Award Winning)",
+    "year": "2023",
+    "statusBadge": "KU Fair Showcase Winner",
+    "authors": [
+      "Sundeep Dawadi"
+    ],
+    "description": "Re-engineered the neural inference architecture for Nepali acoustic speech synthesis. Slashed inference latency by 97.5% (from 80 seconds down to 2 seconds) while maintaining natural prosody and acoustic clarity.",
+    "tags": [
+      "Acoustic Speech Synthesis",
+      "TTS",
+      "Inference Optimization",
+      "Edge Speech"
+    ],
+    "bibtex": "@misc{dawadi2023nepalitts,\n  title={Optimized Real-Time Nepali Text-to-Speech Inference Engine},\n  author={Dawadi, Sundeep},\n  note={Kathmandu University Annual Project Fair Showcase Winner},\n  year={2023}\n}"
+  },
+  {
+    "id": "asr-pseudo-subtitles",
+    "title": "ASR Acoustic Bootstrapping via Automated Pseudo-Subtitle Curation",
+    "venue": "Mentored Research Collaboration (KU)",
+    "year": "2023",
+    "statusBadge": "Curated Resource",
+    "authors": [
+      "Sundeep Dawadi (Mentor)",
+      "Undergraduate Researchers"
+    ],
+    "description": "Engineered an automated data-harvesting engine that curates, filters, and aligns pseudo-subtitles from online media to expand acoustic training datasets for Nepali Automatic Speech Recognition.",
+    "tags": [
+      "Speech Recognition (ASR)",
+      "Acoustic Bootstrapping",
+      "Data Pipeline",
+      "Low-Resource Speech"
+    ],
+    "bibtex": "@misc{dawadi2023asrbootstrapping,\n  title={ASR Acoustic Bootstrapping via Automated Pseudo-Subtitle Curation},\n  author={Dawadi, Sundeep},\n  note={Mentored Research Collaboration, Kathmandu University},\n  year={2023}\n}"
+  }
+]

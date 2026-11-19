@@ -1,0 +1,69 @@
+{
+  "awards": [
+    {
+      "title": "Project Showcase Winner (1st Place)",
+      "meta": "Kathmandu University Annual Fair 2023",
+      "description": "Awarded for architecting and demonstrating the 2-Second Real-Time Neural Nepali TTS Speech Inference Engine.",
+      "rank": "1st Place Winner",
+      "isHero": true
+    },
+    {
+      "title": "Hackathon Winner — Agri Tech",
+      "meta": "KU Agriculture Club Hackathon",
+      "description": "Designed a Knowledge Graph & Graph RAG-driven edge IoT continuous crop monitoring and diagnostic ecosystem.",
+      "rank": "Winner",
+      "isHero": false
+    },
+    {
+      "title": "Hackathon Winner — AI Crusade",
+      "meta": "Kathmandu University AI Club (KUAIC)",
+      "description": "Engineered an automated LLM-assisted conversational IELTS preparation and diagnostic platform.",
+      "rank": "1st Place",
+      "isHero": false
+    },
+    {
+      "title": "Entrance Examination Topper",
+      "meta": "KUCBT 2022",
+      "description": "Achieved Top Rank for Bachelor of Technology in Artificial Intelligence (Overall 35th KU Merit Rank across all faculties).",
+      "rank": "Rank 1 (KU Merit #35)",
+      "isHero": true
+    },
+    {
+      "title": "Western Regional Mathematics Finalist",
+      "meta": "Secondary Level Regional Olympiad",
+      "description": "Secured regional finalist honors in advanced secondary mathematics problem solving and analytics.",
+      "rank": "Regional Finalist",
+      "isHero": false
+    }
+  ],
+  "collabs": [
+    {
+      "title": "Guest Presenter — AI & Agroecology",
+      "institution": "Kathmandu University (Department of Agriculture)",
+      "role": "Invited Keynote Presenter",
+      "description": "Delivered a specialized technical lecture for Master’s candidates on edge computer vision models (YOLOv8), multi-sensor telemetry fusion, and sustainable agricultural AI deployment.",
+      "badge": "Master’s Colloquium"
+    },
+    {
+      "title": "Linguistic Pipeline Architecture & Lab Secretary",
+      "institution": "AISSR LAB KU",
+      "role": "Lab Secretary & Research Lead",
+      "description": "Collaborate closely with Dr. Yagya Raj Pandeya and Sunil Regmi to architect automated morphological data generation pipelines, Indic cross-lingual word embeddings, and low-resource Devanagari NLP benchmarks.",
+      "badge": "University Research Lab"
+    },
+    {
+      "title": "Nepali WordNet Linguistic Preservation",
+      "institution": "Open Access Linguistic Archives",
+      "role": "Open-Access Contributor",
+      "description": "Continuous contribution to the structural refinement, disambiguation, and digitizing of open-access linguistic networks for Nepali WordNet and regional dialect preservation.",
+      "badge": "Linguistic Archival"
+    },
+    {
+      "title": "Technical Research Mentorship",
+      "institution": "Kathmandu University AI Club (KUAIC)",
+      "role": "Research Mentor",
+      "description": "Regularly mentor junior engineering students on scientific proposal writing, experiment replication, statistical significance evaluation, and peer-review publication standards.",
+      "badge": "Student Mentorship"
+    }
+  ]
+}

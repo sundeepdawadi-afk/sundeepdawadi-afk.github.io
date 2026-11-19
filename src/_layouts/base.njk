@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{% if title %}{{ title }} | {% endif %}{{ site.name }} — {{ site.role }}</title>
+    <meta name="description" content="{{ description or site.description }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="{{ site.author }}">
+    <meta property="og:title" content="{% if title %}{{ title }} | {% endif %}{{ site.name }}">
+    <meta property="og:description" content="{{ description or site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="{{ site.url }}/img/og.png">
+    <meta property="og:url" content="{{ page.url | absoluteUrl(site.url) }}">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ site.url }}/img/og.png">
+    <link rel="canonical" href="{{ page.url | absoluteUrl(site.url) }}">
+    <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} — Blog" href="/feed.xml">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/animate.min.css">
+    <link rel="stylesheet" href="/css/magnific-popup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/dripicons.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/meanmenu.css">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.css" crossorigin="anonymous">
+</head>
+
+<body class="dark">
+    <!--  Preloader  -->
+    <div id="preloader" class="loader-wrapper">
+        <div id="loading" class="loader"> </div>
+    </div>
+    <!--  Preloader end  -->
+    <!-- Lines -->
+    <div class="content-lines-wrapper">
+        <div class="content-lines-inner">
+            <div class="content-lines"></div>
+        </div>
+    </div>
+    <!-- Lines -->
+    {% include "partials/header.njk" %}
+    <!-- offcanvas-area -->
+    <div class="offcanvas-menu">
+        <span class="menu-close"><i class="fas fa-times"></i></span>
+        <div id="cssmenu3" class="menu-one-page-menu-container">
+            <ul class="menu">
+                {% for item in nav %}
+                <li class="menu-item"><a href="{{ item.href }}">{{ item.label }}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div id="cssmenu2" class="menu-one-page-menu-container">
+            <ul class="menu">
+                <li class="menu-item"><a href="mailto:{{ site.email }}"><span>{{ site.email }}</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="offcanvas-overly"></div>
+    <!-- offcanvas-end -->
+    <!-- main-area -->
+    <main>
+        {{ content | safe }}
+    </main>
+    <!-- main-area-end -->
+    {% include "partials/footer.njk" %}
+
+    <!-- JS here -->
+    <script src="/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="/js/vendor/jquery.min.js"></script>
+    <script src="/js/popper.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+    <script src="/js/paroller.js"></script>
+    <script src="/js/wow.min.js"></script>
+    <script src="/js/js_isotope.pkgd.min.js"></script>
+    <script src="/js/imagesloaded.min.js"></script>
+    <script src="/js/parallax.min.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/jquery.counterup.min.js"></script>
+    <script src="/js/jquery.scrollUp.min.js"></script>
+    <script src="/js/jquery.meanmenu.min.js"></script>
+    <script src="/js/parallax-scroll.js"></script>
+    <script src="/js/jquery.magnific-popup.min.js"></script>
+    <script src="/js/element-in-view.js"></script>
+    <script src="/js/lenis.min.js"></script>
+    <script src="/js/typed.js"></script>
+    <script src="/js/main.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/katex.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.18/dist/contrib/auto-render.min.js"
+        onload="renderMathInElement(document.body, { delimiters: [ { left: '$$', right: '$$', display: true }, { left: '\\(', right: '\\)', display: false }, { left: '$', right: '$', display: false } ] });"></script>
+</body>
+
+</html>

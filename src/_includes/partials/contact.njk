@@ -1,0 +1,49 @@
+<!-- contact-area -->
+<section id="contact" class="contact-area after-none contact-bg pt-120 pb-120 p-relative fix" style="background: #1c1c1c;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 order-1">
+                <div class="section-title p-relative mb-50 pl-60 wow fadeInLeft" data-animation="fadeInLeft" data-delay=".4s">
+                    <h6>Contact</h6>
+                    <h2>Feel Free To Ask Anything</h2>
+                    <p>Open to research collaborations, engineering opportunities, and conversations about low-resource NLP or edge AI.</p>
+                </div>
+
+                <div class="contact-info pl-60">
+                    <div class="single-cta pb-30 mb-30 wow fadeInUp" data-animation="fadeInDown animated" data-delay=".2s">
+                        <p><i class="fas fa-envelope-open me-2"></i><a href="mailto:{{ site.email }}">{{ site.email }}</a></p>
+                    </div>
+                    <div class="single-cta pb-30 mb-30 wow fadeInUp" data-animation="fadeInDown animated" data-delay=".3s">
+                        <p><i class="fas fa-map-marker-alt me-2"></i>{{ site.location }}</p>
+                    </div>
+                    <div class="single-cta pb-30 mb-30 wow fadeInUp" data-animation="fadeInDown animated" data-delay=".4s">
+                        <p><i class="fas fa-graduation-cap me-2"></i>Kathmandu University — AI &amp; NLP Research</p>
+                    </div>
+                </div>
+                <div class="slider-btn pl-60">
+                    <a href="mailto:{{ site.email }}?subject=Hello%20Sundeep" class="btn ss-btn white" data-animation="fadeInRight" data-delay=".8s">Send an Email</a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 order-2">
+                <div class="contact-bg contact-card">
+                    <h3 class="contact-card-title">Let’s build something meaningful.</h3>
+                    <p class="contact-card-text">Whether it’s a paper, a production pipeline, or an idea for Nepali language technology — my inbox is open.</p>
+                    <ul class="contact-card-list">
+                        <li><i class="fas fa-check"></i> Research &amp; publication collaboration</li>
+                        <li><i class="fas fa-check"></i> NLP / ML engineering roles</li>
+                        <li><i class="fas fa-check"></i> Talks, mentoring &amp; open source</li>
+                    </ul>
+                    <div class="slider-btn">
+                        <a href="mailto:{{ site.email }}?subject=Hello%20Sundeep" class="btn ss-btn">{{ site.email }}</a>
+                    </div>
+                    <div class="footer-social contact-card-social mt-30">
+                        {% for s in site.socials %}
+                        <a href="{{ s.url }}" title="{{ s.name }}" target="_blank" rel="noopener noreferrer"><i class="{{ s.icon }}"></i></a>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- contact-area-end -->

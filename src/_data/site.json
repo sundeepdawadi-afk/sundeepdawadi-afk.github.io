@@ -1,0 +1,46 @@
+{
+  "name": "Sundeep Dawadi",
+  "role": "AI & NLP Researcher",
+  "tagline": "Architecting AI for Low-Resource Languages & Edge Hardware",
+  "description": "Portfolio of Sundeep Dawadi, an Artificial Intelligence undergraduate and researcher at Kathmandu University, specializing in Natural Language Processing, Low-Resource Indic Languages, Edge IoT AI, and Agentic Systems.",
+  "email": "sundeepdwd@gmail.com",
+  "url": "https://sundeepdawadi-afk.github.io",
+  "location": "Pokhara & Kathmandu, Nepal",
+  "author": "Sundeep Dawadi",
+  "navCta": {
+    "label": "Email Me",
+    "href": "mailto:sundeepdwd@gmail.com"
+  },
+  "socials": [
+    {
+      "name": "GitHub",
+      "url": "https://github.com/sundeepdawadi-afk",
+      "icon": "fa-brands fa-github"
+    },
+    {
+      "name": "Hugging Face",
+      "url": "https://huggingface.co/sundeepdawadi-afk",
+      "icon": "fa-solid fa-robot"
+    },
+    {
+      "name": "LinkedIn",
+      "url": "https://np.linkedin.com/in/sundeep-dawadi-6b846b421",
+      "icon": "fa-brands fa-linkedin-in"
+    },
+    {
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/citations?user=WZlKvaoAAAAJ&hl=en",
+      "icon": "fa-solid fa-graduation-cap"
+    },
+    {
+      "name": "X (Twitter)",
+      "url": "https://x.com/",
+      "icon": "fa-brands fa-x-twitter"
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/geekfulbutte/",
+      "icon": "fa-brands fa-instagram"
+    }
+  ]
+}

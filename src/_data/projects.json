@@ -1,0 +1,97 @@
+[
+  {
+    "id": "krishi-chasma-sdk",
+    "title": "Krishi Chasma SDK & Agentic IoT Automation",
+    "category": "Agentic AI & IoT",
+    "badge": "Award Winning Hackathon Project",
+    "isFeatured": true,
+    "description": "An automated agricultural intelligence ecosystem marrying embedded edge nodes (ESP32 / Raspberry Pi) with YOLO and DenseNet vision models. Integrates LLM-powered agentic diagnostics, sensor telemetry (soil, temperature, humidity), and automated climate alert dispatchers tailored for low-connectivity rural zones.",
+    "architecture": "Hardware Edge Nodes -> Sensor Fusion -> Edge Vision Pipeline -> Local / Cloud LLM Agent Reasoning -> SMS / Voice Alert Engine",
+    "technologies": [
+      "ESP32",
+      "Raspberry Pi",
+      "YOLO",
+      "DenseNet",
+      "PyTorch",
+      "LangChain",
+      "MQTT",
+      "Edge AI"
+    ],
+    "githubUrl": "https://github.com/sundeepdawadi-afk/hackathon_agri"
+  },
+  {
+    "id": "nep-tokenizer",
+    "title": "DOAIxILPRL Nepali Tokenizer & Preprocessing Suite",
+    "category": "NLP Tooling",
+    "badge": "Hugging Face Release",
+    "isFeatured": true,
+    "description": "Specialized tokenizer and morphological segmentation pipeline engineered for indigenous and low-resource Devanagari languages. Released under the DOAIxILPRL-KU department organization on Hugging Face to standardize subword vocabulary construction for Nepali and Newari language models.",
+    "architecture": "Unigram / Byte-Pair Encoding trained on high-purity Nepali text with custom Devanagari Unicode normalizers.",
+    "technologies": [
+      "SentencePiece",
+      "HuggingFace",
+      "Python",
+      "Morphological Normalization",
+      "Devanagari Scripts"
+    ],
+    "demoUrl": "https://huggingface.co/DOAIxILPRL-KU"
+  },
+  {
+    "id": "gov-np-scraper",
+    "title": "Automated Government Agricultural Data Harvester",
+    "category": "Data Automation",
+    "description": "Robust Python data scraper designed to systematically navigate and curate unstructured tabular, textual, and PDF crop data from Nepalese government portals (.gov.np). Employs automated document parser filters and rate-limited multithreading to build standardized open datasets.",
+    "technologies": [
+      "Python",
+      "BeautifulSoup4",
+      "Playwright",
+      "Pandas",
+      "PDFPlumber",
+      "Data Curation"
+    ],
+    "githubUrl": "https://github.com/sundeepdawadi-afk"
+  },
+  {
+    "id": "invasive-plant-classifier",
+    "title": "Invasive Plant Species Vision Classifier & Dataset",
+    "category": "Agentic AI & IoT",
+    "description": "Computer vision pipeline and benchmark dataset developed for identifying invasive plant species threatening agricultural ecosystems in Nepal. Released dataset on Hugging Face and trained convolutional classifiers with transfer learning.",
+    "technologies": [
+      "PyTorch",
+      "ResNet",
+      "Data Augmentation",
+      "Hugging Face Datasets",
+      "OpenCV"
+    ],
+    "demoUrl": "https://huggingface.co/datasets/sundeepdawadi-afk/invasive_species_classification_images",
+    "githubUrl": "https://github.com/sundeepdawadi-afk/invasive_plants_classification"
+  },
+  {
+    "id": "slam-robot-navigation",
+    "title": "SLAM-Based Autonomous Robot Navigation",
+    "category": "Robotics & Hardware",
+    "description": "Implemented real-time Simultaneous Localization and Mapping (SLAM) algorithms on embedded microcontroller hardware. Designed motor-drive kinematics, LIDAR/ultrasonic sensor fusion, and dynamic obstacle avoidance routines for indoor autonomous navigation.",
+    "technologies": [
+      "SLAM",
+      "ROS / Embedded C++",
+      "Microcontrollers",
+      "LIDAR",
+      "Motor Kinematics",
+      "Sensor Fusion"
+    ],
+    "githubUrl": "https://github.com/sundeepdawadi-afk"
+  },
+  {
+    "id": "hotel-waiter-robot",
+    "title": "Autonomous Hotel Waiter Robot",
+    "category": "Robotics & Hardware",
+    "description": "Bachelor of Engineering capstone project inspired by Paaila Technology. Built an autonomous service robot capable of table delivery, interactive audio prompts, trajectory tracking, and real-time payload stabilization.",
+    "technologies": [
+      "Electronics & Robotics",
+      "Embedded Systems",
+      "PCB Design",
+      "Audio Prompt System",
+      "Hardware Prototyping"
+    ]
+  }
+]
